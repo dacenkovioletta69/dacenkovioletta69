@@ -1,0 +1,21 @@
+Fix the sources of project JokerRubyReels (platform: unity, ticket ANDROID-3695). Round 1 of 3.
+
+Project: C:/AndroidWorkspace/projects/JokerRubyReels
+Generation rules (mandatory): C:/AndroidWorkspace/CLAUDE-unity.md
+Full pipeline log: C:/AndroidWorkspace/projects/JokerRubyReels/.unity-pipeline.log
+
+THE MAIN THING is the human's complaint, it matters more than the gate findings (they saw this on the device):
+main menu background is default tempate's, need the custom
+Find WHICH object/code draws what is complained about and fix the cause. Screenshots
+of the previous build: C:/AndroidWorkspace/projects/JokerRubyReels/prompts/screenshots (may be older than the code).
+
+Requirements:
+  * Change ONLY project files. Do not touch template files (rule §00). Fix via
+    your own objects/overrides (C.2, C.18), not by editing the template's base prefabs.
+  * Fix the cause, not the symptom. Do NOT weaken or bypass checks, delete nothing
+    to pass a gate.
+  * BEFORE FINISHING run ALL pipeline gates yourself and get exit 0:
+        bash C:/AndroidWorkspace/scripts/lib/unity-gates.sh C:/AndroidWorkspace/projects/JokerRubyReels
+    If a gate fails — fix and run again. A gate marked soft is acceptable, HARD is not.
+  * Do not start the build and do not touch the pipeline — autofix will do the rebuild and the screenshot comparison.
+  * At the end of the answer, one line: what exactly you changed (files and gist).
