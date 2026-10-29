@@ -1,0 +1,64 @@
+{
+  "style": "stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art",
+  "assets": [
+    {"name":"bg_lobby","type":"bg","transparent":false,"target":"Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+     "prompt":"Vertical 9:16 mobile game menu background, velvet-dark ruby-wine card parlour interior, deep wine drapes and polished gold cornices, a warm gold spotlight pool in the centre of the frame, the lower third muted and low contrast so interface panels stay readable on top, colour scheme deep wine 230B13 with metallic gold FACC15 and a violet 7C3AED rim, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text, no letters, no numbers, no UI elements, no characters"},
+
+    {"name":"bg_reels","type":"bg","transparent":false,"target":"Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+     "prompt":"Vertical 9:16 mobile game background, dark ruby-wine slot cabinet interior, a soft gold bloom behind a large empty centre area, heavy velvet shadow at the edges, deliberately muted and low contrast so a reel grid and buttons read clearly on top, colour scheme deep wine 230B13 with metallic gold FACC15, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text, no letters, no numbers, no UI elements, no characters"},
+
+    {"name":"sprite_sym_sapphire","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_sapphire.png",
+     "prompt":"One single faceted deep blue sapphire gem, symmetric, seen straight on, crisp bevelled facets, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_sym_emerald","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_emerald.png",
+     "prompt":"One single faceted rich green emerald gem, symmetric, seen straight on, crisp bevelled facets, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_sym_bell","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_bell.png",
+     "prompt":"One single polished gold casino bell with a ruby clapper, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_sym_star","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_star.png",
+     "prompt":"One single five point gold star medallion with a bevelled ruby centre, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_sym_crown","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_crown.png",
+     "prompt":"One single gold crown with ruby inlays along its band, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_sym_seven","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_seven.png",
+     "prompt":"One single chunky ruby red lucky seven numeral with thick gold edging, standing upright in its normal reading orientation, never mirrored and never reversed, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no other digits"},
+
+    {"name":"sprite_sym_ruby","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_ruby.png",
+     "prompt":"One single large faceted deep red ruby gem, symmetric, seen straight on, brilliant cut with a bright highlight, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_sym_joker","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_sym_joker.png",
+     "prompt":"One single porcelain white jester mask wearing a three point collar in violet and gold, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_emblem_mark","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_emblem_mark.png",
+     "prompt":"One single abstract emblem badge: a faceted ruby diamond seated inside a three point jester collar with a gold rim and a soft violet aura, symmetric, seen straight on, no letters of any kind, no lettering, no monogram, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art"},
+
+    {"name":"sprite_joker_host","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_joker_host.png",
+     "prompt":"One single porcelain faced jester host in a ruby and violet costume with a gold three point collar, half body, arms open in welcome, turned straight toward the viewer, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_coin","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_coin.png",
+     "prompt":"One single thick gold casino coin with a faceted ruby set into its centre and a milled rim, symmetric, seen straight on, no numerals, no letters, no engraving, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art"},
+
+    {"name":"sprite_shard","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_shard.png",
+     "prompt":"One single small violet crystal shard with sharp clean facets and a bright inner glow, symmetric, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_chest_vault","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_chest_vault.png",
+     "prompt":"One single ornate gold vault chest with ruby inlays and a heavy clasp, lid closed, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_room_crest","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_room_crest.png",
+     "prompt":"One single abstract gold crest shield with a violet enamel field and a small ruby at its heart, symmetric, seen straight on, no letters of any kind, no lettering, no heraldic text, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art"},
+
+    {"name":"sprite_glow_burst","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_glow_burst.png",
+     "prompt":"One single soft round halo of warm gold light, brightest at the centre and fading smoothly to nothing at the edges, a pure gradient with no outline, no rim, no visible edge, no ring, no star shape, no spokes, no sparkle shapes, no dots, symmetric, stylized 3D glossy casino render, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_icon_back","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_icon_back.png",
+     "prompt":"One single thick gold chevron arrow icon, side view, facing LEFT, the arrow points LEFT, bevelled bold shape, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_icon_pause","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_icon_pause.png",
+     "prompt":"One single gold pause icon made of two thick vertical bars with bevelled edges, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no text"},
+
+    {"name":"sprite_icon_close","type":"sprite","transparent":true,"target":"Assets/Art/Sprites/sprite_icon_close.png",
+     "prompt":"One single gold X shaped close cross icon with bevelled edges, symmetric, seen straight on, stylized 3D glossy casino render, chunky rounded forms, thick gold rim-light, deep velvet shading, game art, no letters"}
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "_note": "tapFrac = normalised SCREEN coords from the TOP-LEFT, computed from the real RectTransforms, never estimated. Panel space is 1242 x 2688 (CanvasScaler reference, ScreenMatchMode Expand) hanging under SafeArea/AspecterSA, an AspectRatioFitter locked to 1242/2688. On a 1080x2400 device the canvas resolves to 1242 x 2760 and the panel is letterboxed by 36 units top and bottom, so: tapFracX = panelX / 1242 and tapFracY = (36 + (2688 - panelY)) / 2760. Panel coordinates below are the ones the code lays out with (ParlourUi anchors every node to the panel's bottom-left with a centred pivot, so an anchoredPosition IS the element's centre).",
+  "steps": [
+    {
+      "waitLoader": true,
+      "shot": "01_LobbyScreen",
+      "_why": "Step 1 must block on the loader: the menu scene shows the template SplashPanel on cold launch too, and the capture job force-stops and relaunches. A fixed wait here photographs the loading bar and offsets every later tap by a whole scene."
+    },
+    {
+      "tapFrac": [0.1498, 0.8167],
+      "label": "DAILY BONUS",
+      "wait": 1.5,
+      "shot": "02_DailyVaultSheet",
+      "_panel": "LobbyNav row 1140x130 centred (621,470); button 0 of 4 at local (135,65) -> panel (186,470)"
+    },
+    {
+      "tapFrac": [0.5000, 0.5848],
+      "label": "CLAIM",
+      "wait": 2.0,
+      "shot": "03_VaultClaimed",
+      "_panel": "DailyVaultSheet.ClaimPanelY 1110, x = MidX 621. Coins fly to the pill (0.5s + 0.3s stagger), the day tile flips to checked and the CTA becomes a disabled CLAIMED plate."
+    },
+    {
+      "tapFrac": [0.8543, 0.2424],
+      "label": "VAULT CLOSE",
+      "wait": 1.2,
+      "shot": "04_LobbyAfterBonus",
+      "_panel": "DailyVaultSheet.ClosePanelX 1061 / ClosePanelY 2055 - the SHEET's own 132x132 cross, which is not the pop's cross and not the pause button."
+    },
+    {
+      "tapFrac": [0.5000, 0.6948],
+      "label": "PLAY",
+      "waitLoader": true,
+      "shot": "05_SlotReelsIdle",
+      "_panel": "LobbyStageDirector.PlayPanelY 806.4, x = MidX 621; the button rect is fixed in the scene at 760x168 on a collapsed anchor {0.5,0.3}. The game scene plays its own splash, hence waitLoader."
+    },
+    {
+      "tapFrac": [0.5000, 0.7949],
+      "label": "SPIN",
+      "wait": 3.2,
+      "shot": "06_LineWin",
+      "_panel": "GameHudView.SpinPanelY 530, x = MidX 621. The first player spin of a fresh install is drawn from a guaranteed three-of-a-kind CLASS, so the frame lands on a lit payline; the reels stop at 0.6 + 4*0.3 + 0.45 = 2.25s and the payline pulses for ~2s after that."
+    },
+    {
+      "tapFrac": [0.5000, 0.7949],
+      "label": "SPIN AGAIN",
+      "wait": 3.6,
+      "shot": "07_BigWinPop",
+      "_panel": "Same SPIN button. The second player spin is drawn from a four-of-a-kind CLASS worth 15x the stake, over the 12x big-win threshold, so the WIN card (POPS.WIN = 7) is raised the moment the last reel stops."
+    },
+    {
+      "tapFrac": [0.7300, 0.6373],
+      "label": "SPIN ON",
+      "waitLoader": true,
+      "shot": "08_ReelsAfterWin",
+      "_panel": "WIN card BOT_BTNS_RIGHT, 546.5x252.7 at panel (906.7, 965) on the pops canvas, which uses the same 1242x2688 panel space as DefaultPanel. Its template LoadSceneButton{IsLoadCurrentScene:1} reloads the game scene, so the board comes back fresh with the won balance - hence waitLoader."
+    }
+  ]
+}
